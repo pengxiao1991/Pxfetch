@@ -1,18 +1,18 @@
-# Pxfetch
+# PxFetch
 类似$.ajax的、手感优秀的ajax插件
 
 
-## Pxfetch
+## PxFetch
 
 使用fetch api来实现类似于jquery的ajax的全局插件（当浏览器不支持fetch api时，默认使用ajax），为了贴近使用ajax的用户习惯，该插件大部分方法参数格式与jquery的ajax一模一样，暂时只支持返回json数据，建议使用import导入使用。（因为使用了较多es6语法，建议使用babel）
 ```javascript
-import myfetch from Pxfetch;
+import myfetch from PxFetch;
 ```
-### 核心方法：myfetch.pxfetch(settings)  返回一个xhr对象，可用来中止xhr请求
+### 核心方法：myfetch.pxFetch(settings)  返回一个xhr对象，可用来中止xhr请求
 
 settings是一个对象，暂时有url、type、data、success、error、complete属性，**与ajax()的参数极其类似**
 ```javascript
-myfetch.pxfetch({
+myfetch.pxFetch({
     type: 'method',
     url: 'url',
     data: 'data',
@@ -57,7 +57,7 @@ data属性可以是一个映射，比如 {key1: 'value1', key2: 'value2'} 或者
 
 #### 1. fetchPrefilter(fn)
 
-全局的预过滤函数，**回调函数fn的参数只有一个**，是pxfetch方法中传入的参数，可以对其进行修改
+全局的预过滤函数，**回调函数fn的参数只有一个**，是pxFetch方法中传入的参数，可以对其进行修改
 ```javascript
 myfetch.fetchPrefilter((options) => {
     if (!/^http/.test(options.url)) {
