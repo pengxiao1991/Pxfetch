@@ -10,13 +10,12 @@ import myfetch from Pxfetch;
 ```
 ### 核心方法：myfetch.pxfetch(settings)  返回一个xhr对象，可用来中止xhr请求
 
-settings是一个对象，暂时有url、type、data、success、error、complete、suspensibility(是否可以中止xhr请求)属性，**与ajax()的参数极其类似**
+settings是一个对象，暂时有url、type、data、success、error、complete属性，**与ajax()的参数极其类似**
 ```javascript
 myfetch.pxfetch({
     type: 'method',
     url: 'url',
     data: 'data',
-    suspensibility: false,
     success: (responseJson) => {
         
     }
@@ -81,9 +80,4 @@ myfetch.fetchSuccess((data) => {
     }   
 });
 ```
-#### 3. abortAll()
-
-全局的中止所有请求方法
-```javascript
-myfetch.abortAll();
 
