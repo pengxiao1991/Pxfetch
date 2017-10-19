@@ -1,14 +1,14 @@
 {
-  "name": "Pxfetch",
+  "name": "px-fetch",
   "version": "1.0.0",
   "description": "一个类似$.ajax的ajax插件",
-  "main": "Pxfetch.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/pengxiao1991/Pxfetch.git"
+    "url": "https://github.com/pengxiao1991/pxFetch.git"
   },
   "keywords": [
     "ajax",
@@ -18,7 +18,7 @@
   "author": "px单位君",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/pengxiao1991/Pxfetch/issues"
+    "url": "https://github.com/pengxiao1991/pxFetch/issues"
   },
   "dependencies": {
     "whatwg-fetch": "^2.0.3"
