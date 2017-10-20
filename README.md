@@ -8,7 +8,7 @@
 ```javascript
 import myfetch from PxFetch;
 ```
-### 核心方法：myfetch.pxFetch(settings)  返回一个xhr对象，可用来中止xhr请求
+### 核心方法：myfetch.pxFetch(settings)
 
 settings是一个对象，暂时有url、type、data、success、error、complete属性，**与ajax()的参数极其类似**
 ```javascript
